@@ -1,0 +1,24 @@
+nischal=input("nischal make a move:")
+import random
+rand_num=random.randint(0,2)
+if rand_num==0:
+		computer="rock"
+elif rand_num==1:
+		computer="paper"
+else :
+		computer="scissor"
+print(computer)
+if nischal=="rock" and computer=="scissor":
+	print ("nischal wins")
+elif nischal=="rock" and computer=="paper":
+	print("computer wins")
+elif nischal=="paper" and computer=="rock":
+	print("nischal wins")
+elif nischal=="paper" and computer=="scissor":
+	print("computer wins")
+elif nischal=="scissor" and computer=="rock":
+	print ("nischal wins")
+elif nischal=="scissor" and computer=="paper":
+	print("nischal wins")
+else:
+	print("Tie match ")
